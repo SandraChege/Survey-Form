@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media(max-width:320px){
+    body {
+        font-size:10px;
+    }
+}
+/* font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;*/
+body{
+    background-image: url('photo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+#survey-form{
+    background-color: rgba(5, 131, 210, 0.5);
+    padding: 10px;
+    width: 600px; /*width for background color*/
+    margin: auto;
+}
+
+.survey-body{
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+/*background image behaviour 
+when minimized znd maximized*/
+#title{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 3px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+#description{
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container{
+    word-wrap: break-word;   
+}
+#name-label, #email-label, #number-label{
+    color: whitesmoke;
+    font-size: 20px;
+}
+#name, #email, #number{
+    width: 35em;
+    padding: 10px;
+    border-radius: 0.3em;
+}
+input{
+   font-size: 15px;
+   font-family: 'Roboto', sans-serif; 
+}
+/* increase paadding of select element*/
+#drop{
+    padding: 10px;
+    width: 41em;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    border-radius: 0.3em;
+}
+textarea{
+    width: 35em;
+    padding: 5px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: solid, black;
+}
+#submit{
+    padding: 5px;
+    width: 35em;
+    margin: 10px;
+    background-color: black;
+    color: antiquewhite;
+}

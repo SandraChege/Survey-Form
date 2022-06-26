@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&family=Roboto&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 id="title">Leopard beach Hotel</h1>
+            <p id="description"> We would love to hear from you! Please take a moment to let us know about your experience.</p>
+        </div>
+        <!--form-->
+        <form  id="survey-form" action="POST" validate>
+            <div class="splash">
+                <!--name-->
+                <div class="survey-body" id="body-survey">
+                    <label id="name-label" for="name">Name</label> <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name:" required>
+                </div>
+                <!--email and do user case 6--> 
+                <div class="survey-body" id="body-survey">
+                    <label id="email-label" for="email">E-mail</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email:" required>
+                </div>
+                <!--age-->
+                <div class="survey-body" id="body-survey">
+                    <label id="number-label" for="number">Age</label><br>
+                    <input type="number" id="number" name="number" min="15" max="100" placeholder="Enter your age:" required>
+                </div>
+                <!--Did you enjoy your stay-->
+                <div class="survey-body">
+                    <p>Did you enjoy your stay?</p>
+                    <input type="radio" name="stay" required>
+                    <label for="">Yes</label> <br>
+
+                    <input type="radio" name="stay">
+                    <label for="">No</label>
+                </div>
+                <!--room type-->
+                <div id="dropdown" class="survey-body">
+                    <p>
+                        In which room did you stay
+                    </p>
+                        <select name="room" id="drop" required>
+                            <option disabled selected value>Select an option</option>
+                            <option value="normal" class="point"> Normal</option>
+                            <option value="Basic" class="point">Basic</option>
+                            <option value="Deluxe" class="point">Deluxe</option>
+                            <option value="Classic" class="point">Classic</option>
+                            <option value="executive" class="point">Executive</option>
+                        </select>
+                </div>
+                <!--Rate the staff-->
+                <div class="survey-body">
+                    <p>How professional was the hotel staff?</p>
+                    <input type="radio" name="profession" required>
+                    <label for="">Extremely professional</label><br>
+
+                    <input type="radio" name="profession">
+                    <label for="">Quite professional</label> <br>
+
+                    <input type="radio" name="profession">
+                    <label for="">Moderately professional</label> <br>
+
+                    <input type="radio" name="profession">
+                    <label for="">Somewhat professional</label> <br>
+
+                    <input type="radio" name="profession">
+                    <label for="">Not professional</label> <br>
+                </div>
+                <!--checkbox-->
+                <div id="facility" class="survey-body">
+                    <p>
+                        Which amenities did you enjoy?
+                    </p>
+                    <label for="gym">
+                        <input type="checkbox" id="gym" name="gym" value="amenities" required>
+                        Gym
+                    </label> <br>
+                    <label for="spa">
+                        <input type="checkbox" id="spa" name="spa" value="amenities">
+                        Spa
+                    </label> <br>
+                    <label for="pool">
+                       <input type="checkbox" id="pool" name="pool" value="amenities">
+                       Swimming pool
+                    </label> <br>
+                    <label for="Casino">
+                        <input type="checkbox" id="Casino" name="Casino" value="amenities">
+                        Casino & Bar
+                    </label> <br>
+                    <label for="Sauna">
+                        <input type="checkbox" id="Sauna" name="Sauna" value="amenities">
+                        Sauna
+                    </label> <br>
+                </div>
+
+                <div class="survey-body">
+                    <p>
+                        How can we improve our services
+                    </p>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter any comments"></textarea>
+                </div>
+                <div>
+                    <label for="Submit">
+                        <input type="submit"id="submit" name="submit">
+                    </label>
+                </div>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>
+<!--start with use case 14-->
